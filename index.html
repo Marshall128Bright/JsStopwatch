@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/stopwatch.js"></script>
+    <title>Vanilla JS stopwatch</title>
+</head>
+<body>
+    <h1 id="title">STOP WATCH</h1>
+    <div id="dials">
+        <span id="min">00</span>
+        <span class="spacer">:</span>
+        <span id="sec">00</span>
+        <span class="spacer">:</span>
+        <span id="milsec">00</span>
+    </div>
+    <div id="bars">
+        <h2 class="barName">minutes</h2>
+        <div class="barCover" id="minPos"><div id="minBar"></div></div>
+        <br/>
+        <h2 class="barName">Seconds</h2>
+        <div class="barCover" id="secPos"><div id="secBar"></div></div>
+    </div>
+    <div id="buttons">
+        <button class="btn" id="startbtn" onclick="watch('start')">start</button>
+        <button class="btn" id="stopbtn" onclick="watch('stop')">stop</button>
+        <button class="btn" id="resetbtn" onclick="watch('reset')">reset</button>
+    </div>
+    
+</body>
+</html>

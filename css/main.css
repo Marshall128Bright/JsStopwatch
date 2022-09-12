@@ -1,0 +1,89 @@
+body{
+    max-width: 100%;
+    font-family: impact;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#title{
+    width: 100%;
+    
+}
+
+#dials{
+    max-width: 70%;
+    align-content: flex-end;
+    font-size: 4rem;
+    width: fit-content;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+}
+
+#dials span{
+    margin: 0 auto;
+}
+
+#bars{
+    padding: 25px 0px 40px 0px;
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+    background-color: #5e5e5e;
+
+}
+
+.barName{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 10pt;
+    margin: 0;
+}
+
+.barCover{
+    width: 94%;
+    margin-left: 2%;
+    height: 35px;
+    border: 2px #5e5e5e solid;
+    border-radius: 12px;
+    background-color: #2b2727;
+    
+}
+
+#minBar{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #e22dd9;
+}
+
+#secBar{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #1cd368;
+}
+
+#buttons{
+    position: relative;
+    top:50px;
+}
+
+.btn{
+    width: 90px;
+    height: 40px;
+    border: 0;
+    border-radius: 2px;
+    font-size: 1.3rem;
+}
+
+#startbtn{
+    position: inherit;
+    background-color: #1cd368;
+
+}
+
