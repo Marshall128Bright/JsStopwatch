@@ -22,6 +22,7 @@ const startWatch = () =>{
         sec=0;
         min++;
         document.getElementById("sec").innerHTML = "00";
+        colourChanger('secBar');
         
     }else if(sec <= 9){
         document.getElementById("sec").innerHTML = "0" + sec;
@@ -41,10 +42,12 @@ const startWatch = () =>{
 function progressBar(){
     let secProgress = (sec / 60 ) * 100;
     let minProgress = (min / 60 ) * 100;
-    document.getElementById('secBar').style.width = secProgress + "%"
+    document.getElementById('secBar').style.width = secProgress + "%";
+    
     if(secProgress == 60){
-        if(minProgress <=60){
+       if(minProgress <=60){
         document.getElementById("minBar").style.width = minProgress + "%";
+        colourChanger('minBar');
         }
     }
 }
@@ -79,3 +82,11 @@ function watch(state){
         
     
 }
+
+const colourChanger = (el)=>{
+    let r = Math.random() * 256;
+    let g = Math.random() * 256;
+    let b = Math.random() * 256;
+    document.getElementById(el).style.backgroundColor = `rgb(${r},${g},${b})`;
+}
+
